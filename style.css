@@ -37,7 +37,7 @@ body {
     font-size: 12em;
 }
 
-.milisecondClock {
+.milisecond {
     position: absolute;
     font-size: 4rem;
     color: #333;
@@ -46,24 +46,36 @@ body {
     transform: translate(-50%, -50%)
 }
 
-/* .button {
+.w-250 {
+    width: 250px;
+}
+
+.button {
     padding: 20px 60px;
     font-size: 1.2rem;
     background-color: indigo;
     color: white;
     border-radius: 30px;
-    border: none;
+    border: 2px solid transparent;
     margin: 0 .2em;
     font-weight: 600;
     letter-spacing: 1.3px;
-} */
+    cursor: pointer;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
-.transition {
-    /* background-color: #090909; */
+.button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* .transition {
+    background-color: #090909;
     height: 100vh;
     width: 0px;
-    /* animation: nextTransition 5s linear infinite; */
-}
+    animation: nextTransition 5s linear infinite;
+} */
 
 /* @keyframes nextTransition {
     0% {
