@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Sofia Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.cronomiter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.cronomiter-title {
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 12em;
+}
+
+.milisecondClock {
+    position: absolute;
+    font-size: 4rem;
+    color: #333;
+    top: 50%;
+    right: -140px;
+    transform: translate(-50%, -50%)
+}
+
+/* .button {
+    padding: 20px 60px;
+    font-size: 1.2rem;
+    background-color: indigo;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin: 0 .2em;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+} */
+
+.transition {
+    /* background-color: #090909; */
+    height: 100vh;
+    width: 0px;
+    /* animation: nextTransition 5s linear infinite; */
+}
+
+/* @keyframes nextTransition {
+    0% {
+        background-color: #090909;
+        width: 0%;
+    }
+    100% {
+        background-color: #090909;
+        width: 100%;
+    }
+} */
+
+
+
+
+
+
