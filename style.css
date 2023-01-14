@@ -5,7 +5,7 @@
 }
 
 body {
-    color: white;
+    color: #fff;
     background-color: black;
     font-family: 'Sofia Sans', sans-serif;
     letter-spacing: 1.5px;
@@ -42,7 +42,7 @@ body {
     font-size: 4rem;
     color: #333;
     top: 50%;
-    right: -140px;
+    right: -135px;
     transform: translate(-50%, -50%)
 }
 
@@ -50,46 +50,65 @@ body {
     width: 250px;
 }
 
-.button {
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
     padding: 20px 60px;
     font-size: 1.2rem;
-    background-color: indigo;
-    color: white;
+    background-color: #F24134;
+    color: #fff;
     border-radius: 30px;
     border: 2px solid transparent;
     margin: 0 .2em;
     font-weight: 600;
     letter-spacing: 1.3px;
     cursor: pointer;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: btn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.button:hover {
+.btn-reset {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    cursor: pointer;
 }
 
-/* .transition {
-    background-color: #090909;
-    height: 100vh;
-    width: 0px;
-    animation: nextTransition 5s linear infinite;
-} */
+.btn-reset img {
+    width: 50px;
+    height: 50px;
+}
 
-/* @keyframes nextTransition {
+.btn-stop {
+    background-color: transparent;
+    border: 2px solid #F24134;
+    color: #fff;
+    animation: btn-stop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes btn {
     0% {
-        background-color: #090909;
-        width: 0%;
+        background-color: #000;
+        border: 2px solid #F24134;
+        color: #fff;
     }
     100% {
-        background-color: #090909;
-        width: 100%;
+        background-color: #F24134;
+        border: 2px solid #F24134;
+        color: #fff;
     }
-} */
+}
 
-
-
-
-
-
+@keyframes btn-stop {
+    0% {
+        background-color: #F24134;
+        border: 2px solid #F24134;
+        color: #fff;
+    }
+    100% {
+        background-color: #000;
+        border: 2px solid #F24134;
+        color: #fff;
+    }
+}
