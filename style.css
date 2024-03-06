@@ -73,6 +73,7 @@ body {
 .btn-reset {
     background-color: transparent;
     cursor: pointer;
+    border: none;
 }
 
 .btn-reset img {
